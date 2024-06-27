@@ -1,0 +1,49 @@
+{
+    "title": "Region Enchantment",
+    "description": "Some minor tweaks to enhance the region experience. Drag regions to the hotbar and enjoy some additional region controls. Read more on the github project page.",
+    "version": "1.0.2",
+    "url": "https://github.com/Plushtoast/regionenchantment",
+    "manifest": "https://raw.githubusercontent.com/Plushtoast/regionenchantment/main/module.json",
+    "download": "https://github.com/Plushtoast/regionenchantment/releases/download/1.0.2/regionenchantment-1.0.2.zip",
+    "languages": [{
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json"
+        },
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "esmodules": [
+        "bundle/modules/init.js"
+    ],
+    "styles": [
+        "styles/css/region.css"
+    ],
+    "id": "regionenchantment",
+    "authors": [{
+        "name": "Huepfklotz"
+    }],
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12",
+        "maximum": "12"
+    },
+    "flags": {
+        "hotReload": {
+            "extensions": [
+                "css",
+                "html",
+                "hbs",
+                "json"
+            ],
+            "paths": [
+                "templates",
+                "styles/css",
+                "lang"
+            ]
+        }
+    }
+}

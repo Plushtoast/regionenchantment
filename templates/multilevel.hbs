@@ -1,0 +1,19 @@
+<div>
+    <p><label>Delete source</label><input type="checkbox" id="deleteSource" name="deleteSource"/>
+    <table>
+        <tr>
+            <th></th>
+            <th>In</th>
+            <th>Out</th>
+            <th>Teleport ID</th>
+        </tr>
+        {{#each multiLevelTokens as |item key|}}
+        <tr class="multiTokenHover" data-id="{{key}}">
+            <td><button class="icon" type="button" data-tooltip="REGIONENCHANTMENT.replaceMultiToken" data-action="replace"><i class="fas fa-edit"></i></button></td>
+            <td><i class="fas {{ifThen item.in "fa-check" "fa-close"}}"></i></td>
+            <td><i class="fas {{ifThen item.out "fa-check" "fa-close"}}"></i></td>
+            <td><a data-action="centerPlaceable" class="centerOn">{{item.teleportId}}</a></td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
