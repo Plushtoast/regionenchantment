@@ -3,4 +3,13 @@
         background-color: darkred;
         color: black;
     }
+    button {
+        min-height: 25px;
+        line-height: 25px;
+    }
+    .smallFlex {
+        flex: 0 0 40px;
+        align-items: center;
+        text-align: center;
+    }
 }

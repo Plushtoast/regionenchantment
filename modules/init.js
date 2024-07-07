@@ -25,5 +25,6 @@ Hooks.on("renderRegionBehaviorConfig", (app, html) => {
 
 Hooks.once("canvasReady", () => {
     console.warn("REGIONENCHANTMENT | Ready")
+    foundry.applications.ui.RegionLegend.DEFAULT_OPTIONS.window.resizable = true
     bindManualHide()
 })

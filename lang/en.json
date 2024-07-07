@@ -2,6 +2,8 @@
     "REGIONENCHANTMENT": {
         "hideRegion": "Hide Region temporary",
         "replaceMulti": "Replace Multilevel Token teleporters",
-        "replaceMultiToken": "Replace"
+        "replaceMultiToken": "Replace",
+        "deleteSource": "Delete Source",
+        "deleteSourceHint": "Delete the source multilevel area after recreating the teleporter as scene region (make sure to create a backup in advance)."
     }
 }

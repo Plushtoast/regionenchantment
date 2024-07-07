@@ -1,19 +1,25 @@
 <div>
-    <p><label>Delete source</label><input type="checkbox" id="deleteSource" name="deleteSource"/>
-    <table>
-        <tr>
-            <th></th>
-            <th>In</th>
-            <th>Out</th>
-            <th>Teleport ID</th>
-        </tr>
-        {{#each multiLevelTokens as |item key|}}
-        <tr class="multiTokenHover" data-id="{{key}}">
-            <td><button class="icon" type="button" data-tooltip="REGIONENCHANTMENT.replaceMultiToken" data-action="replace"><i class="fas fa-edit"></i></button></td>
-            <td><i class="fas {{ifThen item.in "fa-check" "fa-close"}}"></i></td>
-            <td><i class="fas {{ifThen item.out "fa-check" "fa-close"}}"></i></td>
-            <td><a data-action="centerPlaceable" class="centerOn">{{item.teleportId}}</a></td>
-        </tr>
-        {{/each}}
-    </table>
+    <p>{{localize 'REGIONENCHANTMENT.multilevelreplacer'}}</p>
+    <p>
+        <label>{{localize 'REGIONENCHANTMENT.deleteSource'}}</label><input type="checkbox" id="deleteSource" name="deleteSource"/>
+        
+    </p>
+    <p><small>{{localize 'REGIONENCHANTMENT.deleteSourceHint'}}</small></p>
+    <div class="scrollable standard-form">
+        <div class="flexrow">
+            <div class="smallFlex"></div>
+            <div class="smallFlex"><b></b>In</div>
+            <div class="smallFlex"><b></b>Out</div>
+            <div><b></b>Teleport ID</div>
+        </div>
+            {{#each multiLevelTokens as |item key|}}
+            <div class="flexrow multiTokenHover" data-id="{{key}}">
+                <div class="smallFlex"><button class="icon" type="button" data-tooltip="REGIONENCHANTMENT.replaceMultiToken" data-action="replace"><i class="fas fa-edit"></i></button></div>
+                <div class="smallFlex"><i class="fas {{ifThen item.in "fa-check" "fa-close"}}"></i></div>
+                <div class="smallFlex"><i class="fas {{ifThen item.out "fa-check" "fa-close"}}"></i></div>
+                <div><a data-action="centerPlaceable" class="centerOn">{{item.teleportId}}</a></div>
+            </div>
+            {{/each}}
+        </table>
+    </div>
 </div>

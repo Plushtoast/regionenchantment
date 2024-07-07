@@ -18,13 +18,13 @@ class MultiLevelReplacer extends foundry.applications.api.HandlebarsApplicationM
         id: "MultiLevelReplacer",
         tag: "aside",
         position: {
-          width: 320,
           height: "auto"
         },
         window: {
           title: "REGIONENCHANTMENT.replaceMulti",
-          icon: "fa-regular fa-game-board",
-          minimizable: false
+          icon: "fa-regular fa-skull",
+          minimizable: false,
+          resizable: true
         },
         actions: {},
       };
