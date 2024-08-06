@@ -1,7 +1,7 @@
 import { getBestContrastColor } from "./util.js"
 
 export const addSaveOnlyButton = (app, html) => {
-    const button = $(`<button class="save-only" type="button"><i class="fas fa-save"></i><label>${game.i18n.localize('save')}</label></button>`)
+    const button = $(`<button class="save-only" type="button"><i class="fas fa-save"></i><label>${game.i18n.localize('Save')}</label></button>`)
     button.on('click', async(event) => {
         event.preventDefault()
 

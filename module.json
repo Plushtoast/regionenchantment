@@ -1,6 +1,6 @@
 {
     "title": "Region Enchantment",
-    "description": "Some minor tweaks to enhance the region experience. Drag regions to the hotbar and enjoy some additional region controls. Read more on the github project page.",
+    "description": "Some minor tweaks to enhance the region experience. Drag region from the region legend to region behaviors and enjoy some additional region controls. Read more on the github project page.",
     "version": "1.0.4",
     "url": "https://github.com/Plushtoast/regionenchantment",
     "manifest": "https://raw.githubusercontent.com/Plushtoast/regionenchantment/main/module.json",
