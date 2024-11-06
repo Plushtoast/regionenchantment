@@ -1,11 +1,11 @@
 import { bindManualHide, addHideRegionButton, addDragging } from "./legend.js"
-import { addSaveOnlyButton, setHeaderColor, applyFunctions, addRegionConfigDragging } from "./behavior.js"
+import { addSaveOnlyButton, setHeaderColor, applyFunctions, addRegionConfigDragging, addHoverIndicator } from "./behavior.js"
 import { addMutilevelReplacer } from "./multilevelreplacer.js"
 
 Hooks.on("renderRegionLegend", (app, html) => {
     addHideRegionButton(app, html)
     addDragging(app, html)
-
+    addHoverIndicator(app, html)
     addMutilevelReplacer(app, html)
 })
 

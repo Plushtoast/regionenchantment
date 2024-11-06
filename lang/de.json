@@ -5,6 +5,7 @@
         "replaceMultiToken": "Ersetzen",
         "deleteSource": "Quelle löschen",
         "deleteSourceHint": "Lösche die Quell-Multilevel-Region nach dem Erstellen des Teleporters als Szenenregion (stelle sicher, dass du vorher ein Backup erstellst).",
-        "multilevelreplacer": "Ersetze Multilevel Token Teleporter mit Scene Regions. Bitte beachte, dass Scene Regions möglicherweise andere oder bessere Funktionen bietet wie Multilevel Tokens."
+        "multilevelreplacer": "Ersetze Multilevel Token Teleporter mit Scene Regions. Bitte beachte, dass Scene Regions möglicherweise andere oder bessere Funktionen bietet wie Multilevel Tokens.",
+        "fullduplex": "Soll der Teleport in beide Richtungen funktionieren?"
     }
 }
