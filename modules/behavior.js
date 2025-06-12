@@ -8,7 +8,7 @@ export const addSaveOnlyButton = (app, html) => {
     event.preventDefault();
 
     const form = $(event.currentTarget).closest("form")[0];
-    const formData = new FormDataExtended(form);
+    const formData = new foundry.applications.ux.FormDataExtended(form);
 
     await app.options.form.handler.call(app, event, form, formData);
   });
@@ -82,7 +82,6 @@ export const addHoverIndicator = (app, html) => {
         const region = canvas.scene.regions.get(ev.currentTarget.dataset.regionId)
         
         const teleportIds = region.behaviors.filter(b => b.type === 'teleportToken').map(b => b.system.destination.split('.').pop())
-        console.log(teleportIds)
         jhtml.find('.region').removeClass('regionenchantment-marker')
         jhtml.find('.region').filter((i, el) => teleportIds.includes(el.dataset.regionId)).addClass('regionenchantment-marker')
     }).on('mouseleave', (ev) => {
