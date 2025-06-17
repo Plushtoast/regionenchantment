@@ -1,0 +1,11 @@
+{
+    "REGIONENCHANTMENT": {
+        "hideRegion": "Ukryj tymczasowo region",
+        "replaceMulti": "Zastąp teleporty wielopoziomowe tokenów",
+        "replaceMultiToken": "Zastąp",
+        "deleteSource": "Usuń źródło",
+        "deleteSourceHint": "Usuń źródłowy obszar wielopoziomowy po ponownym utworzeniu teleportu jako regionu sceny (pamiętaj, aby wcześniej utworzyć kopię zapasową).",
+        "multilevelreplacer": "Zastąp tokeny wielopoziomowe teleportacją regionów sceny. Należy pamiętać, że regiony sceny mogą oferować inne lub lepsze funkcje niż tokeny wielopoziomowe.",
+        "fullduplex": "Czy teleportacja powinna działać w obu kierunkach?"
+    }
+}
